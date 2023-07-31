@@ -34,7 +34,7 @@ static inline void _spi1_setup(uint8_t line)
 /* TODO */
 
 
-spi_ctx g_cfg_tbl[] = {
+static spi_ctx g_cfg_tbl[] = {
     {&hspi1, _spi1_select, _spi1_setup, spi1_tx_buf, spi1_rx_buf, 0, SPI1_CACHE_SIZE, NULL, NULL},
     //{&hspi2, _spi2_select, _spi2_setup, spi2_tx_buf, spi2_rx_buf, 0, SPI2_CACHE_SIZE, NULL, NULL},
 }; 
